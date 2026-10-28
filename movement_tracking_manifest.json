@@ -1,0 +1,35 @@
+{
+  "name": "movement_tracking",
+  "abi": 1,
+  "source_visibility": "private-repository-only",
+  "hardening_profile": "native-hardened-v5-opaque-xollvm",
+  "obfuscation_profile": "xollvm-v0.11.1-selective",
+  "protection_notice_sha256": "88d6575c9313d8550f518244c341c6c3e3cc104e31e9416747b108c43ae39c8c",
+  "system_checkscum_file": "SystemCheckscum.xml",
+  "detection_settings_file": "detection_settings.xml",
+  "targets": {
+    "windows-x86_64-cpython-311": {
+      "file": "windows-x86_64/detection.dll",
+      "python": [
+        3,
+        11
+      ],
+      "size": 1820160,
+      "sha256": "31bea8b4712065c740def514b90aed7241a8fdf99cdcc1976a9c2d3e12a6fbff"
+    },
+    "linux-x86_64-cpython-310": {
+      "file": "linux-x86_64/detection.so",
+      "python": [
+        3,
+        10
+      ],
+      "size": 1977952,
+      "sha256": "6349169699b57caa9a3d80f453b02e685933be2dbbb94bccc670c0aa57fed8a9"
+    }
+  },
+  "signature": {
+    "algorithm": "RSASSA-PKCS1-v1_5-SHA256",
+    "key_id": "2bb990744357ff82c943a4bb1d67d15c13ce17d3050724fa22669852343786be",
+    "value": "XzaKnRDAOtJDsAc+fpmYZT+wpkWqSVnnmTs4RwB4iBm3qDlGzH8V8vRHkG6Zy67x1oeZNPj6WswUUiTujVcxZ0i3FSjTDKS9FnDUGj9h1u1t1EiUX1xz9DWdqKobuCdHTHGWU5qKNaHfldBCQgkt/AAz/rROB2t7BhwCljxGOw/6EkvQSfOueh2tdK8R++DS5tzndcMVj0XoEe8GmxP+vubC75/xLpVDu0eNWIwlcOaXChOcaYcrVr8PzvBT+e7VJdtT2kgcbyDZfw1itWol9Enbco0OOP5gHWym85Hvszv4tjQdkbfN10V7Wnsv2G+PahAvRCcnXh7I2rkNblJYJaAim+1lZcEM7F4Cw9ZJitSi7VaoDDN/cnSY8jw2qaZssOGnxf8gHIi5d8KA9FBXiZXNBxuBPmzCVtH3dFqqL6sXqxx7hIaE4L8GFBnmmaok6SNdzVUieaQKc2i1iUvzC9BEbdNI6/VVylCenVUA6oY83tLXzTuBqemINJauB0+q"
+  }
+}
